@@ -1,0 +1,401 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.topo {
+    background-color: #FFFFFF;
+    width: 100% /*1366px*/;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.logos {
+    margin-left: 21vw;/*216.38px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone img {
+    font-size: 22px;  
+}
+
+.icones{
+    font-size: 22px;
+    margin-right:21vw; /*Problemas quando a tela tem aprox 1100px*/
+}
+
+.icone {
+    color:black;
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+.separador-vertical {
+    margin-right:10px;
+    width: 1px;
+    height: 22px;
+    background-color:#DBDBDB;
+}
+
+.searchbox {
+    color:darkgrey;
+    width: 215px;
+    height: 28px;
+    left: 575px;
+    top: 13px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display:flex;
+    align-items:center;
+    justify-content: center; 
+}
+
+.separador-horizontal {
+    background-color: #DBDBDB;
+    width: 100vw;
+    height: 1px;
+    margin: 0 0 auto;
+
+    position: fixed;
+	top: 54px;
+	right: 0;
+}
+
+.stories{
+    width: 36vw;
+    height: 118px;                   
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-top: 70px;
+    overflow: hidden;
+
+    position:relative;
+}
+
+.story {         
+    margin-left: 1vw;        
+    display: flex;
+}
+
+.caixa-story p {
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-story {
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    margin-left: 14px;
+    margin-top:18px; 
+
+    background-image: url(stories_background.jpg);
+    background-position:center;
+    background-size: 66px;
+}
+.bloco-story img {
+    border-radius: 28px;
+    margin: 5px;
+    width: 56px;
+    height: 56px;
+}
+.nome {
+    font-weight:700;
+    width: 58px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.setinha { 
+    font-size: 26px;
+    color:#FFFFFF;
+    position: absolute; 
+    bottom:40%;
+    left:94%;
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))
+}
+
+
+.sidebar {   
+    display: block;
+    align-items:baseline;
+    width: 17vw;
+    height: 350px;
+    background: #FFFFFF;
+    margin-top: 34px;
+
+    position:fixed; /*Como fixar essa caixa sem lascar tudo?* Problema width 1200px*/
+    top: 165px;
+    right:20vw;
+}
+
+.perfil {
+    display:flex;
+    align-items: center;
+
+    position:fixed;
+    top: 105px;
+    left:61vw;
+}
+
+.perfil img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 17px;
+}
+.perfil h1 {      /*Talvez seja melhor usar inline-block*/
+    font-size: 14px;
+    font-weight: 700;
+}
+.perfil b {
+    font-weight: 400;
+    color:gray;
+    margin-top:50px;
+}
+
+.sidebar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right:10px;
+}
+.sidebar table {
+    width:100%;
+}
+
+.sidebar .sugestoes{
+    font-weight: 700;
+    font-size: 12px;
+    color: #8E8E8E;
+
+    text-align: left;
+    height:30px;
+}
+.sidebar .vertudo {
+    font-weight: 700;
+    font-size: 12px;
+    color: #262626;
+
+    text-align: center;
+    height:30px;
+}
+.sidebar td {
+    height: 48px;
+    vertical-align:middle;
+}
+.sidebar .column2 {
+    font-weight: 700;
+    font-size: 12px;
+    color: #139EF2;
+    text-align: center;
+}
+
+.sidebar .column1 {
+    display: flex;
+    align-items: center;
+}
+.sidebar h1 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #262626;
+}
+.sidebar h2 {
+    font-size: 12px;
+    color: #8E8E8E;
+    }
+.sidebar p{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    color: #C7C7C7;
+}
+
+.post{
+    width: 36vw;
+    top: 230px;
+    background: #FFFFFF;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 24px;
+}
+
+.likes b {
+    font-weight:700;
+}
+
+.post-topo{
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post-topo p {
+    margin-right: 17px;
+}
+.post .icones {
+    display: flex;
+    color:black;
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 17px;
+}
+
+.likes {
+    display:flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 13px 17px;
+}
+.post .likes img {
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.post-perfil {
+    width: 109px;
+    height: 21px;
+    margin-left:17px;
+    display: flex;
+    align-items: center;
+}
+.post .post-topo img{
+    width: 32px;
+    height: 32px;
+    border-radius:16px;
+    margin-right: 15px;
+}
+.post img {
+    width: 100%;
+    height: 82%;
+}
+
+.post-video {
+    width: 100%;
+}
+
+.conteudo {
+    width: 57%/*936px*/;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 30px;    
+    }
+
+
+/*Media Queries*/
+@media (min-width:615px) and (max-width:935px){
+    .sidebar {display: none;
+    }
+
+    .perfil {display:none;
+    }
+
+    .logos {margin-left:1%; 
+    }
+    
+    .icones{ margin-right:0;
+    }
+    
+    .stories{
+        width:65vw;
+    }
+    .post {
+        width:65vw;
+    }
+
+    .conteudo{
+        justify-content: center;
+    }
+}
+
+@media (max-width:614px){
+    .sidebar {display: none;
+    }
+
+    .perfil {display:none;
+    }
+
+    .searchbox {display:none;
+    } 
+    
+    .separador-vertical {display:none;
+    } 
+ 
+    .conteudo-principal {
+        background-color: #E5E5E5;
+    }
+
+    .icone img {
+        width: 103px;
+        height: 29px; 
+    }
+    
+    .icones{
+        font-size: 19.25px;
+        margin:5vw;
+    }
+    
+    .icone.heart {display:none;
+    } 
+    .icone.clock {display:none;
+    } 
+    .icone.profile {display:none;
+    } 
+    
+    .logos {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin:5vw;
+    }
+
+    .separador-horizontal {
+        width:100%;
+        top: 55px;
+
+        position:fixed;  /*nao esta funcionando*/
+        top:0;
+        right:0;  
+    }
+    
+    .conteudo {
+        width:100%;
+    }
+    .stories{
+        margin-top:30px;
+        width:100%;
+        box-sizing:border-box;
+        border: 1px solid #E5E5E5;
+        background-color: #E5E5E5;
+    }
+    .post {
+        width:100%;
+    }
+}
